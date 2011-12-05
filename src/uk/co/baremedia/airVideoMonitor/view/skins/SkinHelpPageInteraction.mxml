@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" xmlns:components="uk.co.baremedia.airVideoMonitor.view.components.*">
+	<!-- host component -->
+	<fx:Metadata>
+		[HostComponent("uk.co.baremedia.airVideoMonitor.view.components.CompHelpScreenInteraction")]
+	</fx:Metadata>
+	
+	<s:VGroup width="100%">
+		
+		<components:CompHelpItem
+			id="rateUs"
+			width="100%"
+			hasBottomRuler="true"/>
+		
+		<components:CompHelpItem
+			id="feedback"
+			width="100%"
+			hasBottomRuler="true"/>
+		
+		<components:CompHelpItem
+			id="reportProblem"
+			width="100%"/>
+		
+	</s:VGroup>	
+	
+	<fx:Script>
+		<![CDATA[
+			import uk.co.baremedia.airVideoMonitor.assets.Assets;
+		]]>
+	</fx:Script>
+		
+</s:Skin>

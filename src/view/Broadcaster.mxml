@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" 
+		xmlns:cocoon="http://com.projectcocoon.p2p" xmlns:p2p="com.projectcocoon.p2p.*"
+		xmlns:mx="library://ns.adobe.com/flex/mx"
+		xmlns:Lens="uk.co.baremedia.airVideoMonitor.view.skins.Lens.*"
+		
+		backgroundColor="#999999" xmlns:skins="uk.co.baremedia.airVideoMonitor.view.skins.*" 
+		xmlns:components="uk.co.baremedia.airVideoMonitor.view.components.*"
+		
+		title="{ resourceManager.getString(UtilsResources.bundleName, EnumsLanguage.APP_TITLE) }"
+		
+		implements="uk.co.baremedia.airVideoMonitor.view.interfaces.IViewMenuItems" 
+		xmlns:utils="uk.co.baremedia.gnomo.utils.*" 
+		xmlns:assets="uk.co.baremedia.airVideoMonitor.view.skins.assets.*"
+		
+		xmlns:view="view.*"
+		creationComplete="onCreationComplete(event)" 
+		addedToStage="onAddedToStage(event)" >
+	
+	<s:states>
+		<s:State name="ad"/>
+	</s:states>
+	
+	<fx:Declarations>
+		
+	</fx:Declarations>
+
+	<assets:FXGBackground
+		id="backgroundScreenOne"
+		width="100%"
+		height="100%"/>
+	
+	<components:CompMonitor
+		id="broadcaster"
+		width="100%"
+		height="100%"
+		viewContainer="{ this as IViewMenuItems }"
+		skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinMonitor" />
+	
+	<components:CompScreenBase
+		id="baseScreen"
+		
+		visible="{ _screenSpliter.isDualScreen }"/>
+	
+	<components:CompNotifier
+		id="notifierComp"
+		height="50"
+		y="{ (height -  notifierComp.height) }" />
+	
+	<components:CompUpdater
+		width="100%"
+		height="100%"/>
+	
+	<fx:Script>
+		<![CDATA[
+			import mx.core.FlexGlobals;
+			import mx.events.FlexEvent;
+			
+			import net.mariovieira.mobile.sony.ScreenSplitter;
+			
+			import org.as3.mvcsInjector.utils.Tracer;
+			
+			import spark.components.SkinnableContainer;
+			import spark.components.ViewMenuItem;
+			
+			import uk.co.baremedia.airVideoMonitor.assets.Assets;
+			import uk.co.baremedia.airVideoMonitor.enums.EnumsLanguage;
+			import uk.co.baremedia.airVideoMonitor.model.ModelAIRMonitor;
+			import uk.co.baremedia.airVideoMonitor.model.ModelVideoPresenter;
+			import uk.co.baremedia.airVideoMonitor.utils.UtilsViewNavigator;
+			import uk.co.baremedia.airVideoMonitor.view.interfaces.IViewMenuItems;
+			import uk.co.baremedia.gnomo.utils.UtilsAds;
+			import uk.co.baremedia.gnomo.utils.UtilsDeviceInfo;
+			import uk.co.baremedia.gnomo.utils.UtilsResources;
+			
+			[Bindable] protected var model			:ModelAIRMonitor = ModelAIRMonitor.instance;
+			[Bindable] private var _screenSpliter	:ScreenSplitter;
+			private var isAndroid					:Boolean;	
+			
+			override protected function childrenCreated():void
+			{
+				
+				if(UtilsDeviceInfo.isAndroid)
+					_screenSpliter 		   = new ScreenSplitter();
+			}
+			
+			protected function onAddedToStage(event:Event):void
+			{
+				if(_screenSpliter)
+					_screenSpliter.onAddedToStage(stage);
+			}
+			
+			private function onCreationComplete(e:FlexEvent):void
+			{
+				setupScreens(UtilsDeviceInfo.isAndroid);
+			}
+			
+			protected function setupScreens(isAndroid:Boolean):void
+			{
+				//Tracer.log(this, "setupScreenSpliter: "+isAndroid);
+				if(isAndroid)
+				{
+					_screenSpliter.setupScreens(broadcaster, baseScreen, SkinnableContainer(this), actionContentButton.height);
+					model.deviceScreenInfo = _screenSpliter.deviceScreenInfo;
+				}
+				else
+				{
+					model.deviceScreenInfo = ScreenSplitter.getCustomScreenInfo(height);
+					removeElement(baseScreen);
+				}
+				
+				setupVideoPresenters();
+				broadcaster.setupLayout();
+			}
+			
+			private function setupVideoPresenters():void
+			{
+				model.appScreens.addVideoPresenter(broadcaster.videoPresenterComp, broadcaster);
+				
+				if(_screenSpliter && _screenSpliter.isDualScreen)
+				{
+					model.appScreens.addVideoPresenter(baseScreen.videoPresenterComp, baseScreen);
+					backgroundScreenOne.height = backgroundScreenOne.height = height + actionContentButton.height;
+				}
+				
+				updateModel();
+			}
+			
+			private function updateModel():void
+			{
+				broadcaster.model = model;
+				if(model.isDualScreen)
+					baseScreen.model = model;
+			}
+			
+			public function set viewMenu(value:Vector.<ViewMenuItem>):void
+			{
+				viewMenuItems = value;
+			}
+			
+			private function toggleDebugVisibility():void
+			{
+				/* if(debug.visible)
+					debug.visible = false;
+				else
+					debug.visible = true; */
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<!--
+	<utils:UtilsStageWebView
+	id="stageWebView" 
+	includeIn="ad"
+	
+	url="{ UtilsAds.getDefaultAdUrl( CONFIG::AD_TESTS ) }" 
+	
+	yOffset="{ FlexGlobals.topLevelApplication.height - DEAFULT_ADD_SIZE }"
+	width="{ FlexGlobals.topLevelApplication.width }"  
+	
+	visibilityAllowed="{ _adVisible }"
+	autoShowTimer="true"
+	autoHideTimer="true"
+	
+	showTimerDelay="10000"
+	hideTimerDelay="60000"
+	
+	close="onAdClosed(event)"
+	open="onAdOpen(event)" 
+	
+	click="onAdUserInteraction(event)"
+	mouseDown="onAdUserInteraction(event)"
+	toolTipStart="onAdUserInteraction(event)" />
+	-->
+	
+	<s:actionContent>	
+		<s:Button id="actionContentButton" label="{ resourceManager.getString(UtilsResources.bundleName, EnumsLanguage.OPTIONS) }" styleName="backButton" click="UtilsViewNavigator.openViewMenu(broadcaster);" doubleClick="toggleDebugVisibility()"/>
+	</s:actionContent>
+	
+</s:View>

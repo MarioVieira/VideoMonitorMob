@@ -1,0 +1,33 @@
+<html><head>
+
+<script type="text/javascript" src="http://mmv.admob.com/static/iphone/iadmob.js"></script>
+
+<script type="text/javascript">
+    var admob_vars = {
+    pubid: 'admob_pubID', // change to your publisher id
+    bgcolor: 'ffffff', // background color (hex)
+    text: '000000', // font-color (hex)
+    test: true, // test mode, set to false if non-test mode
+    manual_mode: true
+};
+ 
+function showAd()
+{
+    _admob.fetchAd(document.getElementById('adspace'));
+}
+
+</script>
+
+<style type="text/css">
+    body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+</style>
+</head>
+<body onload="showAd()">
+<div id="adspace"></div>
+</body>
+</html>

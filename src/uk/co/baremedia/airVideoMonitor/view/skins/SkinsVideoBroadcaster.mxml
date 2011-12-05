@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" 
+		xmlns:mx="library://ns.adobe.com/flex/mx"
+		xmlns:skins="uk.co.baremedia.airVideoMonitor.view.skins.*">
+	
+	<!-- host component -->
+	<fx:Metadata>
+		[HostComponent("uk.co.baremedia.airVideoMonitor.view.components.CompVideoBroadcaster")]
+	</fx:Metadata>
+	
+	<fx:Script>
+		<![CDATA[
+			import org.as3.mvcsInjector.utils.Tracer;
+			
+			import uk.co.baremedia.airVideoMonitor.assets.Assets;
+			
+		]]>
+	</fx:Script>
+	
+	<s:HGroup
+		height="100%"
+		width="100%"
+		verticalAlign="bottom"
+		horizontalAlign="right"
+		paddingBottom="5"
+		paddingRight="5">
+		
+		<s:BitmapImage
+			id="gestures"
+			visible="{ !hostComponent.model.isDualScreen }"
+			source="{ Assets.Gestures }"/>
+		
+	</s:HGroup>
+	
+	<s:Image
+		id="camera">
+		
+		<s:source>
+			<s:MultiDPIBitmapSource
+				source160dpi="{ Assets.splash_130DPI }"
+				source240dpi="{ Assets.splash_200DPI }" />
+		</s:source>
+	</s:Image>
+	
+	<s:Group id="contentHolder" maskType="clip">
+		<s:mask>
+			<s:Group>
+				<s:Ellipse height="{ userCamera.height }" width="{ userCamera.height }">
+					<s:fill>
+						<s:SolidColor color="0xffffff"/>
+					</s:fill>
+				</s:Ellipse>
+			</s:Group>
+		</s:mask>
+		
+		<s:Image
+			id="cameraFroozenFrame"
+			visible="{ hostComponent.model.broadcasting }"/>
+		
+		<mx:UIComponent 
+			id="userCamera"/>
+		
+	</s:Group>
+	
+</s:Skin>

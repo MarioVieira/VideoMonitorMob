@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Graphic version="2.0" viewHeight="25.5" viewWidth="32.083" ai:appVersion="15.0.0.399" ATE:version="1.0.0" flm:version="1.0.0" d:id="1" d:using="" xmlns="http://ns.adobe.com/fxg/2008" xmlns:ATE="http://ns.adobe.com/ate/2009" xmlns:ai="http://ns.adobe.com/ai/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:flm="http://ns.adobe.com/flame/2008">
+  <Library/>
+  <Group ai:artboardActive="1" ai:artboardIndex="0" ai:seqID="1" d:layerType="page" d:pageHeight="25.5" d:pageWidth="32.083" d:type="layer" d:userLabel="Artboard 1">
+    <Group ai:objID="3680e4f0" ai:seqID="2" d:id="2" d:type="layer" d:userLabel="Layer 2">
+      <Group x="-5.21143" y="5.27539" alpha="0.8" ai:objID="30dbaba0" ai:seqID="3" flm:isolated="false">
+        <Path x="0.415572" y="0.00012207" winding="nonZero" ai:objID="33ecb6e0" ai:seqID="4" data="M13.0488 0.0350342C13.0488 0.0350342 3.49751 0.164917 0.827592 6.6864 0.827592 6.6864 -0.897505 5.45789 0.633256 3.35046 2.64302 0.579956 9.72554 -0.182739 13.0488 0.0350342Z">
+          <fill>
+            <SolidColor/>
+          </fill>
+        </Path>
+        <Path y="5.56738" winding="nonZero" ai:objID="30c64790" ai:seqID="5" data="M0.0307617 0 0 3.6543C0 3.6543 0.0556641 6.7041 3.05469 8.94434 4.49365 10.0557 5.87158 10.6904 6.27148 10.8887 6.24707 12.0381 6.27881 13.5938 6.27881 13.5938L14.0874 8.65527 6.32568 1.43945 6.25732 4.08984C6.25732 4.08984 0.423828 2.92969 0.0307617
+ 0Z">
+          <fill>
+            <SolidColor/>
+          </fill>
+        </Path>
+      </Group>
+      <Group x="24.6045" y="1.06348" alpha="0.8" ai:objID="30c8bc90" ai:seqID="6" flm:isolated="false">
+        <Path x="0.62207" y="12.4736" winding="nonZero" ai:objID="30a5e660" ai:seqID="7" data="M0 6.65234C0 6.65234 9.55371 6.52148 12.2227 0 12.2227 0 13.9463 1.23047 12.416 3.33984 10.4053 6.1084 3.32422 6.87207 0 6.65234Z">
+          <fill>
+            <SolidColor/>
+          </fill>
+        </Path>
+        <Path winding="nonZero" ai:objID="42267080" ai:seqID="8" data="M14.0557 13.5977 14.0859 9.93945C14.0859 9.93945 14.0303 6.88965 11.0312 4.64941 9.59375 3.53906 8.21387 2.9043 7.81445 2.70605 7.83984 1.55664 7.80762 0 7.80762 0L0 4.94141 7.76074 12.1533 7.83008 9.50293C7.83008 9.50293 13.6611 10.665 14.0557
+ 13.5977Z">
+          <fill>
+            <SolidColor/>
+          </fill>
+        </Path>
+      </Group>
+      <Group x="7.73047" y="5.84082" ai:objID="36871200" ai:seqID="9">
+        <Path winding="nonZero" ai:objID="319370d0" ai:seqID="10" data="M15.2295 0 1.64355 0C0.739258 0 0 0.740234 0 1.64258L0 11.2158C0 12.1191 0.739258 12.8594 1.64355 12.8594L15.2295 12.8594C16.1338 12.8594 16.874 12.1191 16.874 11.2158L16.874 1.64258C16.874 0.740234 16.1338 0 15.2295 0ZM1.30859 1.85449C1.30859
+ 1.55371 1.55176 1.31055 1.85156 1.31055L15.0205 1.31055C15.3213 1.31055 15.5645 1.55371 15.5645 1.85449L15.5645 8.63574C15.5645 8.93555 15.3213 9.17969 15.0205 9.17969L1.85156 9.17969C1.55176 9.17969 1.30859 8.93555 1.30859 8.63574L1.30859 1.85449Z
+M12.5498 11.7383C12.1426 11.7383 11.8135 11.4082 11.8135 11.001 11.8135 10.5947 12.1426 10.2656 12.5498 10.2656 12.9561 10.2656 13.2852 10.5947 13.2852 11.001 13.2852 11.4082 12.9561 11.7383 12.5498 11.7383ZM14.9619 11.7383C14.5537 11.7383 14.2246
+ 11.4082 14.2246 11.001 14.2246 10.5947 14.5537 10.2656 14.9619 10.2656 15.3682 10.2656 15.6982 10.5947 15.6982 11.001 15.6982 11.4082 15.3682 11.7383 14.9619 11.7383Z">
+          <fill>
+            <SolidColor alpha="0.8"/>
+          </fill>
+        </Path>
+      </Group>
+    </Group>
+  </Group>
+  <Private>
+      <ai:PrivateElement d:ref="#1">
+        <ai:SaveOptions>
+          <ai:Dict data="B writeImages 1 B aiEditCap 1 I preserveTextPolicy 4 B includeSymbol 0 I versionKey 2 B includeXMP 0 B downsampleLinkedImages 0 B includeObjectOutsideArtboard 0 I expandBlendsOption 5 I preserveFilterPolicy 3 I preserveGradientPolicy 4 I rasterizeResolution 72 "/>
+        </ai:SaveOptions>
+        <ai:DocData base="FXGSwapBroadcastCam.assets/images" globalOffsetH="6.417" globalOffsetV="-627.25" rulerCanvasDiffH="24.5" rulerCanvasDiffV="640.5">
+          <ai:DocRasterSettings>
+            <ai:Dict data="I colr 4 I dpi. 150 B alis 0 B spot 0 B mask 0 R padd 36 "/>
+          </ai:DocRasterSettings>
+        </ai:DocData>
+        <ai:AutoGenImageList>
+          <ai:Dict/>
+        </ai:AutoGenImageList>
+      </ai:PrivateElement>
+      <ai:PrivateElement flm:hashcode="DB529B118E0CA997F3C21C33D396D597" d:ref="#2">
+        <ai:LayerOptions color="5 257 79.31 79.31"/>
+      </ai:PrivateElement>
+    </Private>
+  </Graphic>

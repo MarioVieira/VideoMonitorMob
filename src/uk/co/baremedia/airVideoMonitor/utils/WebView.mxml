@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" title="WebView" xmlns:utils="uk.co.baremedia.gnomo.utils.*">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	<fx:Script>
+		<![CDATA[
+			
+			[Bindable] public var source:String;
+			
+			import mx.events.FlexEvent;
+			
+			protected function stageWebView_locationChangingHandler(event:LocationChangeEvent):void
+			{
+				trace("location changing " + event.location);
+				// You can call event.preventDefault() to prevent the URL change
+			}
+			
+			
+			protected function stageWebView_locationChangeHandler(event:LocationChangeEvent):void
+			{
+				trace("location change " + event.location);
+			}
+			
+		]]>
+	</fx:Script>
+	
+	
+	<utils:UtilsStageWebView 
+		id="stageWebView" 
+		url="{source}" 
+		locationChanging="stageWebView_locationChangingHandler(event)" 
+		locationChange="stageWebView_locationChangeHandler(event)"/>
+
+</s:View>

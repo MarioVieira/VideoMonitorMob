@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Graphic version="2.0" viewHeight="25.5" viewWidth="32.083" ai:appVersion="15.0.0.399" ATE:version="1.0.0" flm:version="1.0.0" d:id="1" d:using="" xmlns="http://ns.adobe.com/fxg/2008" xmlns:ATE="http://ns.adobe.com/ate/2009" xmlns:ai="http://ns.adobe.com/ai/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:flm="http://ns.adobe.com/flame/2008">
+  <Library/>
+  <Group ai:artboardActive="1" ai:artboardIndex="0" ai:seqID="1" d:layerType="page" d:pageHeight="25.5" d:pageWidth="32.083" d:type="layer" d:userLabel="Artboard 1">
+    <Group ai:objID="2a129400" ai:seqID="2" d:id="2" d:type="layer" d:userLabel="Layer 2">
+      <Group x="7.30225" y="4.40479" alpha="0.8" ai:objID="3186f2f0" ai:seqID="3" flm:isolated="false">
+        <Group ai:objID="2a172e80" ai:seqID="4">
+          <mask>
+            <Group ai:spare="1">
+              <Path winding="nonZero" ai:objID="351db170" ai:seqID="5" data="M18.4214 15.9126 1.3667 3.80225 3.48145 0.851074 20.5347 12.9614 18.4214 15.9126ZM20.8843 0 0 0 0 16.6646 20.8843 16.6646 20.8843 0Z">
+                <fill>
+                  <SolidColor color="#FFFFFF"/>
+                </fill>
+              </Path>
+            </Group>
+          </mask>
+          <Path x="3.33252" y="0.851074" winding="nonZero" ai:objID="2a14ec90" ai:seqID="6" data="M0 4.05859 0 11.1094 0 4.05859 5.49072 4.05859 9.5498 0 10.334 0 10.334 15.168 9.5498 15.168 5.49072 11.1094 0 11.1094">
+            <fill>
+              <SolidColor/>
+            </fill>
+            <stroke>
+              <SolidColorStroke weight="1" caps="none" miterLimit="10"/>
+            </stroke>
+          </Path>
+        </Group>
+        <Line xFrom="1.19385" yFrom="1.40771" xTo="17.9302" yTo="13.4058" ai:objID="375bc690" ai:seqID="7">
+          <stroke>
+            <SolidColorStroke weight="1" miterLimit="10"/>
+          </stroke>
+        </Line>
+      </Group>
+    </Group>
+  </Group>
+  <Private>
+      <ai:PrivateElement d:ref="#1">
+        <ai:SaveOptions>
+          <ai:Dict data="B writeImages 1 B aiEditCap 1 I preserveTextPolicy 4 B includeSymbol 0 I versionKey 2 B includeXMP 0 B downsampleLinkedImages 0 B includeObjectOutsideArtboard 0 I expandBlendsOption 5 I preserveFilterPolicy 3 I preserveGradientPolicy 4 I rasterizeResolution 72 "/>
+        </ai:SaveOptions>
+        <ai:DocData base="FXGButtonMute.assets/images" globalOffsetH="6.417" globalOffsetV="-627.25" rulerCanvasDiffH="24.5" rulerCanvasDiffV="640.5">
+          <ai:DocRasterSettings>
+            <ai:Dict data="I colr 4 I dpi. 150 B alis 0 B spot 0 B mask 0 R padd 36 "/>
+          </ai:DocRasterSettings>
+        </ai:DocData>
+        <ai:AutoGenImageList>
+          <ai:Dict/>
+        </ai:AutoGenImageList>
+      </ai:PrivateElement>
+      <ai:PrivateElement flm:hashcode="8461CBE56AEE9ADBE789890E32A6EC04" d:ref="#2">
+        <ai:LayerOptions color="5 257 79.31 79.31"/>
+      </ai:PrivateElement>
+    </Private>
+  </Graphic>

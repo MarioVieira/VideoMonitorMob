@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" 
+		xmlns:assets="uk.co.baremedia.airVideoMonitor.view.skins.assets.*" 
+		xmlns:elements="uk.co.baremedia.airVideoMonitor.view.elements.*" 
+		xmlns:components="uk.co.baremedia.airVideoMonitor.view.components.*">
+	
+	<!-- host component -->
+	<fx:Metadata>
+		[HostComponent("uk.co.baremedia.airVideoMonitor.view.components.CompHelpScreen")]
+	</fx:Metadata>
+	
+	<fx:Script>
+		<![CDATA[
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGButtonRemoveVideo;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGButtonUnMute;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGCamIn;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGGetCamera;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGHDButton;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGIconFullScreenGo;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGSwapBroadcastCam;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGSwapCam;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGSwapCam2;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGUnMuteMic;
+			
+		]]>
+	</fx:Script>
+	
+	<assets:FXGBackground
+		height="100%"
+		width="100%"/>
+
+		<s:VGroup
+			x="{ hostComponent.padding }"
+			horizontalAlign="center"
+			width="100%"
+			height="100%"
+			
+			paddingTop="{ hostComponent.padding * 2 }"
+			paddingRight="{ hostComponent.padding * 2 }"
+			paddingBottom="{ hostComponent.padding * 2 }">
+			
+			<s:VGroup
+				horizontalAlign="center"
+				width="100%"
+				
+				gap="0"
+				paddingTop="{ hostComponent.padding * 2 }"
+				paddingLeft="{ hostComponent.padding }"
+				paddingRight="{ hostComponent.padding * 2 }"
+				paddingBottom="{ hostComponent.padding * 2 }">
+				
+				<s:HGroup
+					width="100%">
+					
+					<components:CompHelpScreenDescriptor
+						id="descriptorComp" 
+						width="100%"
+						minHeight="{ height / 3 }"/>
+					
+					<s:Spacer
+						includeInLayout="{ descriptorComp.currentItemId == 0 }"
+						width="100%"/>
+					
+					<!-- RIGHT SIDE BUTTON -->
+					<s:VGroup
+						id="mainButtons"
+						scaleY="{ hostComponent.videoButtonBarScale }"
+						scaleX="{ hostComponent.videoButtonBarScale }"
+						
+						hideEffect="Fade"
+						showEffect="Fade"
+						gap="0">
+						
+						<s:HGroup
+							horizontalAlign="left"
+							verticalAlign="middle">
+							
+							<elements:ButtonAction
+								id="hdButton"
+								buttonPosition="columnMiddle"
+								toggleButton="false"
+								iconInactive="{ FXGHDButton }"
+								skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction"
+								
+								click="hostComponent.onButtonClick(hdButton, 1)"/>
+							
+						</s:HGroup>
+						
+						<s:HGroup
+							horizontalAlign="left"
+							verticalAlign="middle">
+							
+							<elements:ButtonAction
+								id="getCameraButton"
+								buttonPosition="base"
+								iconInactive="{ FXGGetCamera }" 
+								skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction"
+								
+								click="hostComponent.onButtonClick(getCameraButton, 2)"/>
+							
+						</s:HGroup>
+						
+					</s:VGroup>
+					
+				</s:HGroup>
+				
+				<s:Spacer
+					height="{ hostComponent.videoButtonBarScale }"/>
+				
+				<s:HGroup
+					id="buttonBar"
+					scaleX="{ hostComponent.videoButtonBarScale }"
+					scaleY="{ hostComponent.videoButtonBarScale }">
+					
+					<s:VGroup
+						horizontalAlign="center">
+						
+						<elements:ButtonAction
+							id="sendVideoButton"
+							buttonPosition="left"
+							toggleButton="false"
+							
+							iconInactive="{ FXGCamIn }"
+							skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction" 
+							
+							click="hostComponent.onButtonClick(sendVideoButton, 3)"/>
+						
+					</s:VGroup>
+					
+					<s:VGroup
+						horizontalAlign="center">
+						
+						<elements:ButtonAction
+							id="changeCameraButton"
+							buttonPosition="middle"
+							iconInactive="{ FXGSwapCam }"
+							skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction"
+							
+							click="hostComponent.onButtonClick(changeCameraButton, 4)"/>
+						
+					</s:VGroup>
+					
+					<s:VGroup
+						horizontalAlign="center">
+						
+						<elements:ButtonAction
+							id="muteMicButton"
+							buttonPosition="middle"
+							iconInactive="{ FXGUnMuteMic }"
+							skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction"
+							
+							click="hostComponent.onButtonClick(muteMicButton, 5)"/>
+						
+					</s:VGroup>
+					
+					<s:VGroup
+						horizontalAlign="center">
+						
+						<elements:ButtonAction
+							id="muteButton"
+							buttonPosition="middle"
+							iconInactive="{ FXGButtonUnMute }"
+							skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction"
+							
+							click="hostComponent.onButtonClick(muteMicButton, 6)"/>
+						
+					</s:VGroup>
+					
+					<s:VGroup
+						horizontalAlign="center">
+						
+						<elements:ButtonAction
+							id="removeVideoButton"
+							buttonPosition="middle"
+							iconInactive="{ FXGButtonRemoveVideo }"
+							
+							skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction"
+							click="hostComponent.onButtonClick(removeVideoButton, 7)"/>
+						
+					</s:VGroup>
+					
+					<s:VGroup
+						horizontalAlign="center">
+						
+						<elements:ButtonAction
+							id="changeBroadcastCam"
+							buttonPosition="middle"
+							iconInactive="{ FXGSwapBroadcastCam }"
+							
+							skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction"
+							click="hostComponent.onButtonClick(changeBroadcastCam, 8)"/>
+						
+					</s:VGroup>
+					
+					<s:VGroup
+						horizontalAlign="center">
+						
+						<elements:ButtonAction
+							id="fullScreenButton"
+							buttonPosition="right"
+							iconInactive="{ FXGIconFullScreenGo }"
+							skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction"
+							click="hostComponent.onButtonClick(fullScreenButton, 9)"/>
+						
+					</s:VGroup>
+					
+				</s:HGroup>
+				
+			</s:VGroup>
+			
+			<components:CompHelpScreenInteraction
+				id="interactionComp"
+				width="100%"/>
+			
+		</s:VGroup>
+		
+	
+</s:Skin>

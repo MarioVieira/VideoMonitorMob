@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark">
+	<!-- host component -->
+	<fx:Metadata>
+		[HostComponent("uk.co.baremedia.airVideoMonitor.view.components.CompUpdater")]
+	</fx:Metadata>
+	
+	<!-- SkinParts
+	name=updateNow, type=qnx.ui.buttons.Button, required=true
+	name=updateLater, type=qnx.ui.buttons.Button, required=true
+	-->
+	
+	<s:states>
+		<s:State name="update"/>
+		<s:State name="updating"/>
+		<s:State name="empty"/>
+	</s:states>
+	
+	<s:HGroup
+		width="100%"
+		height="100%"
+		horizontalAlign="center"
+		verticalAlign="middle">
+		
+		<s:Group
+			width="90%"
+			excludeFrom="empty">
+			
+			<s:SkinnableContainer
+				id="image"
+				skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinDarkBackground"
+				width="100%"
+				height="{ info.height + 50 }" />
+			
+			<s:VGroup
+				id="info"
+				x="20"
+				y="25"
+				width="{ image.width - 50 }"
+				gap="0">
+				
+				<s:Label
+					text="{ resourceManager.getString(UtilsResources.bundleName, EnumsLanguage.UPDATES_AVAIALBLE)} - {resourceManager.getString(UtilsResources.bundleName, EnumsLanguage.VERSION)} {hostComponent.latestVersion}  ({resourceManager.getString(UtilsResources.bundleName, EnumsLanguage.CURRENT_VERSION)} {hostComponent.currentVersion})"
+					color="0xcccccc"/> 
+				
+				<s:VGroup
+					includeIn="update"
+					width="100%">
+					
+					<s:TextArea
+						width="100%"
+						borderVisible="false" 
+						contentBackgroundAlpha="0" 
+						editable="false" 
+						selectable="false"
+						text="{ hostComponent.description }"
+						color="0xcccccc"/>
+					
+					<s:HGroup
+						width="100%"
+						horizontalAlign="right">
+						<s:Button
+							id="updateLater"
+							label="{ resourceManager.getString(UtilsResources.bundleName, EnumsLanguage.UPDATE_LATER) }"
+							color="0x000000"
+							alpha=".5"/>
+						
+						<s:Spacer
+							width="20"/>
+						
+						<s:Button
+							id="updateNow"
+							label="{ resourceManager.getString(UtilsResources.bundleName, EnumsLanguage.UPDATE_NOW) }"
+							color="0x000000"
+							alpha=".5"/>	
+					</s:HGroup>
+				</s:VGroup>
+				
+				<s:VGroup
+					width="100%"
+					includeIn="updating">
+					
+					<s:TextArea
+						width="100%"
+						borderVisible="false" 
+						contentBackgroundAlpha="0" 
+						editable="false" 
+						selectable="false"
+						color="0xcccccc"
+						text="{ resourceManager.getString(UtilsResources.bundleName, EnumsLanguage.UPDATING_MESSAGE)} {hostComponent.fileName})" />
+					
+					<s:HGroup
+						width="100%"
+						horizontalAlign="right">
+						
+						<s:Button
+							id="okRemoveWindow"
+							label="{ resourceManager.getString(UtilsResources.bundleName, EnumsLanguage.BUTTON_OK) }"
+							color="0x000000"
+							alpha=".5"/>
+						
+					</s:HGroup>
+					
+				</s:VGroup>
+			</s:VGroup>
+			
+		</s:Group>
+		
+		<s:Group
+			includeIn="updating">
+			
+		</s:Group>
+		
+	</s:HGroup>
+	
+	<fx:Script>
+		<![CDATA[
+			import uk.co.baremedia.airVideoMonitor.assets.Assets;
+			import uk.co.baremedia.airVideoMonitor.enums.EnumsLanguage;
+			import uk.co.baremedia.gnomo.utils.UtilsResources;
+		]]>
+	</fx:Script>
+</s:Skin>

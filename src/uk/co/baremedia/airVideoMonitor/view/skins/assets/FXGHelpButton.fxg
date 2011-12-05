@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Graphic version="2.0" viewHeight="25.5" viewWidth="32.083" ai:appVersion="15.0.0.399" ATE:version="1.0.0" flm:version="1.0.0" d:id="1" d:using="" xmlns="http://ns.adobe.com/fxg/2008" xmlns:ATE="http://ns.adobe.com/ate/2009" xmlns:ai="http://ns.adobe.com/ai/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:flm="http://ns.adobe.com/flame/2008">
+  <Library/>
+  <Group ai:artboardActive="1" ai:artboardIndex="0" ai:seqID="1" d:layerType="page" d:pageHeight="25.5" d:pageWidth="32.083" d:type="layer" d:userLabel="Artboard 1">
+    <Group ai:objID="21b00000" ai:seqID="2" d:id="2" d:type="layer" d:userLabel="Layer 3">
+      <Group x="8.61621" y="2.51514" alpha="0.8" ai:objID="2dfc1a50" ai:seqID="3" flm:isolated="false">
+        <Path winding="nonZero" ai:objID="2dfc21f0" ai:seqID="4" data="M2.61914 13.5571 2.56055 12.8003C2.50195 11.3169 2.96777 9.8042 4.27637 8.26221 5.20703 7.15674 5.96387 6.19629 5.96387 5.20703 5.96387 4.21826 5.29492 3.52002 3.86914 3.49121 2.87988 3.49121 1.74609 3.81055 0.959961 4.33447L0 1.19238C1.04688
+ 0.581543 2.76367 0 4.8584 0 8.66992 0 10.4443 2.12354 10.4443 4.50879 10.4443 6.74951 9.04785 8.1748 7.94238 9.42627 6.89453 10.5889 6.42969 11.7241 6.45898 13.0327L6.45898 13.5571 2.61914 13.5571ZM4.42188 20.2485C2.87988 20.2485 1.83203 19.1138
+ 1.83203 17.6011 1.83203 16.0298 2.91016 14.9536 4.42188 14.9536 5.99316 14.9536 7.01172 16.0298 7.04102 17.6011 7.04102 19.1138 6.02148 20.2485 4.45117 20.2485L4.42188 20.2485Z">
+          <fill>
+            <SolidColor/>
+          </fill>
+        </Path>
+      </Group>
+    </Group>
+  </Group>
+  <Private>
+      <ai:PrivateElement d:ref="#1">
+        <ai:SaveOptions>
+          <ai:Dict data="I preserveFilterPolicy 3 I preserveGradientPolicy 4 I preserveTextPolicy 4 B includeObjectOutsideArtboard 0 I expandBlendsOption 5 B writeImages 1 B includeXMP 0 I versionKey 2 B aiEditCap 1 B includeSymbol 0 I rasterizeResolution 72 B downsampleLinkedImages 0 "/>
+        </ai:SaveOptions>
+        <ai:DocData base="FXGHelpButton.assets/images" globalOffsetH="6.417" globalOffsetV="-627.25" rulerCanvasDiffH="24.5" rulerCanvasDiffV="640.5">
+          <ai:DocRasterSettings>
+            <ai:Dict data="I colr 4 I dpi. 150 B alis 0 B spot 0 B mask 0 R padd 36 "/>
+          </ai:DocRasterSettings>
+        </ai:DocData>
+        <ai:AutoGenImageList>
+          <ai:Dict/>
+        </ai:AutoGenImageList>
+      </ai:PrivateElement>
+      <ai:PrivateElement flm:hashcode="05F59261893BCAED3977694DBEFA45E8" d:ref="#2">
+        <ai:LayerOptions color="5 257 79.31 79.31"/>
+      </ai:PrivateElement>
+    </Private>
+  </Graphic>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark">
+	<!-- host component -->
+	<fx:Metadata>
+		[HostComponent("uk.co.baremedia.airVideoMonitor.view.elements.ButtonMobileToggle")]
+	</fx:Metadata>
+	
+	<!-- states -->
+	<s:states>
+		<s:State name="disabled" />
+		<s:State name="down" />
+		<s:State name="over" />
+		<s:State name="up" />
+		<s:State name="toggle" />
+		<fx:Script>
+			<![CDATA[
+				import uk.co.baremedia.airVideoMonitor.assets.Assets;
+			]]>
+		</fx:Script>
+	</s:states>
+	
+	<!-- SkinParts
+	name=iconDisplay, type=spark.primitives.BitmapImage, required=false
+	name=labelDisplay, type=spark.core.IDisplayText, required=false
+	
+	-->
+	
+	<s:Group>
+		
+		<s:Image
+			alpha=".8">
+			
+			<s:source>
+				<s:MultiDPIBitmapSource
+					source160dpi="{ Assets.buttonMiddle_160 }"
+					source240dpi="{ Assets.buttonMiddle_240 }"
+					source320dpi="{ Assets.buttonMiddle_320 }" />
+			</s:source>
+		</s:Image>
+		
+		<s:Image
+			includeIn="toggle"
+			alpha=".8">
+			<s:source>
+				<s:MultiDPIBitmapSource
+					source160dpi="{ Assets.buttonMiddleActive_160 }"
+					source240dpi="{ Assets.buttonMiddleActive_240 }"
+					source320dpi="{ Assets.buttonMiddleActive_320 }" />
+			</s:source>
+		</s:Image>
+		
+		<s:Image
+			id="icon"
+			alpha=".9"
+			
+			y="{ height / 2 - icon.height / 2 }"
+			x="{ width / 2 - icon.width / 2 }">
+			
+			<s:source>
+				<s:MultiDPIBitmapSource
+					source160dpi="{ Assets.iconHelp_160 }"
+					source240dpi="{ Assets.iconHelp_240 }"
+					source320dpi="{ Assets.iconHelp_320 }"/>
+			</s:source>
+			
+		</s:Image>
+			
+	</s:Group>
+	
+</s:Skin>

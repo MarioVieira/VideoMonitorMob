@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Graphic version="2.0" viewHeight="27.0708" viewWidth="27.8472" ai:appVersion="15.0.0.399" ATE:version="1.0.0" flm:version="1.0.0" d:id="1" d:using="" xmlns="http://ns.adobe.com/fxg/2008" xmlns:ATE="http://ns.adobe.com/ate/2009" xmlns:ai="http://ns.adobe.com/ai/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:flm="http://ns.adobe.com/flame/2008">
+  <Library/>
+  <Group ai:artboardActive="1" ai:artboardIndex="0" ai:seqID="1" d:layerType="page" d:pageHeight="27.071" d:pageWidth="27.847" d:type="layer" d:userLabel="Artboard 1">
+    <Group ai:objID="2c9ab2e0" ai:seqID="2" d:id="2" d:type="layer" d:userLabel="Layer 1">
+      <Group x="-0.472168" y="-0.86377" ai:objID="2fd1a420" ai:seqID="3">
+        <Group ai:objID="2fd18ac0" ai:seqID="4" flm:knockout="false">
+          <Path winding="nonZero" ai:objID="2fd18350" ai:seqID="5" data="M14.354 28.709C6.43896 28.709 0 22.2695 0 14.3545 0 6.43945 6.43896 0 14.354 0 22.2695 0 28.708 6.43945 28.708 14.3545 28.708 22.2695 22.2695 28.709 14.354 28.709ZM14.354 0.82373C6.89258 0.82373 0.823242 6.89307 0.823242 14.3545 0.823242 21.8154
+ 6.89258 27.8848 14.354 27.8848 21.8159 27.8848 27.8848 21.8154 27.8848 14.3545 27.8848 6.89307 21.8159 0.82373 14.354 0.82373Z">
+            <fill>
+              <SolidColor/>
+            </fill>
+          </Path>
+        </Group>
+        <Group x="13.9429" y="0.412109" ai:objID="2fd19010" ai:seqID="6" flm:knockout="false">
+          <Rect width="0.822266" height="27.8828" ai:objID="2fd18870" ai:seqID="7">
+            <fill>
+              <SolidColor/>
+            </fill>
+          </Rect>
+        </Group>
+        <Group x="0.411621" y="13.9424" ai:objID="2fd1b590" ai:seqID="8" flm:knockout="false">
+          <Rect width="27.8843" height="0.823242" ai:objID="2fd19350" ai:seqID="9">
+            <fill>
+              <SolidColor/>
+            </fill>
+          </Rect>
+        </Group>
+        <Group x="7.10889" y="0.19873" ai:objID="2fd1b110" ai:seqID="10" flm:knockout="false">
+          <Path x="0.000212193" winding="nonZero" ai:objID="2fd1b2c0" ai:seqID="11" data="M5.48953 28.2827C-6.8132 13.0337 5.38895 0.128418 5.51199 0L6.10379 0.572754C5.616 1.07715 -5.70822 13.0918 6.12869 27.7661L5.48953 28.2827Z">
+            <fill>
+              <SolidColor/>
+            </fill>
+          </Path>
+        </Group>
+        <Group x="15.4048" y="0.227051" ai:objID="2fd19c00" ai:seqID="12" flm:knockout="false">
+          <Path winding="nonZero" ai:objID="2fd1abb0" ai:seqID="13" data="M0.615723 28.2837 0.0239258 27.7114C0.511719 27.2046 11.8364 15.1899 0 0.516602L0.639648 0C12.9419 15.2495 0.739258 28.1558 0.615723 28.2837Z">
+            <fill>
+              <SolidColor/>
+            </fill>
+          </Path>
+        </Group>
+        <Group x="3.20996" y="19.2979" ai:objID="2fd1ca10" ai:seqID="14" flm:knockout="false">
+          <Path y="0.00025177" winding="nonZero" ai:objID="2fd1c090" ai:seqID="15" data="M21.8184 4.09057C10.6411 -3.22388 0.588867 4.00463 0.48877 4.07885L0 3.41576C0.10498 3.33862 10.6187 -4.22193 22.2676 3.40209L21.8184 4.09057Z">
+            <fill>
+              <SolidColor/>
+            </fill>
+          </Path>
+        </Group>
+        <Group x="3.22852" y="5.34229" ai:objID="2fd19f30" ai:seqID="16" flm:knockout="false">
+          <Path winding="nonZero" ai:objID="2fd198f0" ai:seqID="17" data="M10.9678 4.09082C7.66992 4.09082 3.89893 3.23975 0 0.687988L0.45166 0C11.6294 7.31445 21.6797 0.0864258 21.7803 0.012207L22.2686 0.675293C22.1992 0.727051 17.522 4.09082 10.9678 4.09082Z">
+            <fill>
+              <SolidColor/>
+            </fill>
+          </Path>
+        </Group>
+      </Group>
+    </Group>
+  </Group>
+  <Private>
+      <ai:PrivateElement d:ref="#1">
+        <ai:SaveOptions>
+          <ai:Dict data="B includeXMP 0 B includeObjectOutsideArtboard 0 B writeImages 1 I preserveFilterPolicy 3 B aiEditCap 1 I preserveGradientPolicy 4 I versionKey 2 I preserveTextPolicy 4 B includeSymbol 0 B downsampleLinkedImages 0 I expandBlendsOption 5 I rasterizeResolution 72 "/>
+        </ai:SaveOptions>
+        <ai:DocData base="FXGFlagButton.assets/images" globalOffsetH="-2.847" globalOffsetV="-6.516" rulerCanvasDiffH="20.5" rulerCanvasDiffV="20.5">
+          <ai:DocRasterSettings>
+            <ai:Dict data="I colr 4 I dpi. 150 B alis 0 B spot 0 B mask 0 R padd 36 "/>
+          </ai:DocRasterSettings>
+        </ai:DocData>
+        <ai:AutoGenImageList>
+          <ai:Dict/>
+        </ai:AutoGenImageList>
+      </ai:PrivateElement>
+      <ai:PrivateElement flm:hashcode="3B3F564959FA8F7C919C94B20A254EBB" d:ref="#2">
+        <ai:LayerOptions color="5 79.31 257 128.502"/>
+      </ai:PrivateElement>
+    </Private>
+  </Graphic>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Graphic version="2.0" viewHeight="25.5" viewWidth="32.083" ai:appVersion="15.0.0.399" ATE:version="1.0.0" flm:version="1.0.0" d:id="1" d:using="" xmlns="http://ns.adobe.com/fxg/2008" xmlns:ATE="http://ns.adobe.com/ate/2009" xmlns:ai="http://ns.adobe.com/ai/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:flm="http://ns.adobe.com/flame/2008">
+  <Library/>
+  <Group ai:artboardActive="1" ai:artboardIndex="0" ai:seqID="1" d:layerType="page" d:pageHeight="25.5" d:pageWidth="32.083" d:type="layer" d:userLabel="Artboard 1">
+    <Group ai:objID="3756ac70" ai:seqID="2" d:id="2" d:type="layer" d:userLabel="Layer 2">
+      <Group x="4.69531" y="3.25" alpha="0.8" ai:objID="421c8300" ai:seqID="3" flm:isolated="false">
+        <Path winding="nonZero" ai:objID="2a198600" ai:seqID="4" data="M9.21191 0 13.48 0 16.3916 2.91162 21.8398 2.91162 22.6924 3.76416 22.6924 15.9287 21.6211 17 1.0708 17 0 15.9287 0 3.76416 0.852539 2.91162 6.30078 2.91162 9.21191 0ZM11.3462 4.77002C8.41064 4.77002 6.03125 7.1499 6.03125 10.085 6.03125 13.0205
+ 8.41064 15.3994 11.3462 15.3994 14.2812 15.3994 16.6611 13.0205 16.6611 10.085 16.6611 7.1499 14.2812 4.77002 11.3462 4.77002ZM21.2773 4.48779C21.2773 4.33887 21.1572 4.21826 21.0078 4.21826L18.5752 4.21826C18.4258 4.21826 18.3057 4.33887 18.3057
+ 4.48779L18.3057 5.41553C18.3057 5.56445 18.4258 5.68506 18.5752 5.68506L21.0078 5.68506C21.1572 5.68506 21.2773 5.56445 21.2773 5.41553L21.2773 4.48779Z">
+          <fill>
+            <SolidColor/>
+          </fill>
+        </Path>
+        <Ellipse x="7.56641" y="6.30029" width="7.55957" height="7.55957" ai:objID="35d22ba0" ai:seqID="5">
+          <fill>
+            <SolidColor/>
+          </fill>
+        </Ellipse>
+      </Group>
+    </Group>
+  </Group>
+  <Private>
+      <ai:PrivateElement d:ref="#1">
+        <ai:SaveOptions>
+          <ai:Dict data="B writeImages 1 B aiEditCap 1 I preserveTextPolicy 4 B includeSymbol 0 I versionKey 2 B includeXMP 0 B downsampleLinkedImages 0 B includeObjectOutsideArtboard 0 I expandBlendsOption 5 I preserveFilterPolicy 3 I preserveGradientPolicy 4 I rasterizeResolution 72 "/>
+        </ai:SaveOptions>
+        <ai:DocData base="FXGButtonTakePhoto.assets/images" globalOffsetH="6.417" globalOffsetV="-627.25" rulerCanvasDiffH="24.5" rulerCanvasDiffV="640.5">
+          <ai:DocRasterSettings>
+            <ai:Dict data="I colr 4 I dpi. 150 B alis 0 B spot 0 B mask 0 R padd 36 "/>
+          </ai:DocRasterSettings>
+        </ai:DocData>
+        <ai:AutoGenImageList>
+          <ai:Dict/>
+        </ai:AutoGenImageList>
+      </ai:PrivateElement>
+      <ai:PrivateElement flm:hashcode="5F4BCBBE0018CA2F2F8F43DA0FFE7488" d:ref="#2">
+        <ai:LayerOptions color="5 257 79.31 79.31"/>
+      </ai:PrivateElement>
+    </Private>
+  </Graphic>

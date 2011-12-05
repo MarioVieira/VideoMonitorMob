@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" 
+		xmlns:skins="uk.co.baremedia.airVideoMonitor.view.skins.*" 
+		xmlns:mx="library://ns.adobe.com/flex/mx" 
+		xmlns:components="uk.co.baremedia.airVideoMonitor.view.components.*" 
+		xmlns:elements="uk.co.baremedia.airVideoMonitor.view.elements.*" 
+		xmlns:assets="uk.co.baremedia.airVideoMonitor.view.skins.assets.*" 
+		xmlns:utils="uk.co.baremedia.gnomo.utils.*"
+		creationComplete="hostComponent.skinCreated();">
+	
+	<!-- host component -->
+	<fx:Metadata>
+		[HostComponent("uk.co.baremedia.airVideoMonitor.view.components.CompMonitor")]
+	</fx:Metadata>
+	
+	<fx:Script>
+		<![CDATA[
+			import org.as3.mvcsInjector.utils.Tracer;
+			
+			import uk.co.baremedia.airVideoMonitor.assets.Assets;
+			import uk.co.baremedia.airVideoMonitor.utils.UtilsDimensions;
+			import uk.co.baremedia.airVideoMonitor.utils.UtilsVideoMonitorDPI;
+		]]>
+	</fx:Script>
+	<fx:Script>
+		<![CDATA[
+			import mx.core.FlexGlobals;
+			
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGGetCamera;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGHDButton;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGHelpButton;
+			
+		]]>
+	</fx:Script>
+	
+	<!-- SkinParts
+	name=userCam, type=mx.core.UIComponent, required=true
+	name=videoPresenter, type=mx.core.UIComponent, required=true
+	name=showOptionsButton, type=spark.components.Button, required=true
+	-->
+	
+	<components:CompVideoBroadcaster
+		id="userCamera"
+		width="100%"
+		height="100%"/>
+	
+	<s:CalloutButton id="languagesCallout" 
+					 x="{ width - languagesCallout.width }" 
+					 y="{ int(height / 2 - languagesCallout.height / 2 + (languagesCallout.height / 2) )  }"
+					 skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonLanguages">
+		
+		<components:CompLanguagePanel
+			skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinLanguagePanel"/>
+		
+	</s:CalloutButton>
+	
+	<s:CalloutButton id="helpCallOut" 
+					 y="{ helpButton.height / 2 }"
+					 x="{ mainButtonContainer.width - mainButtons.width }"
+					 width="5"
+					 height="5"
+					 alpha="0"
+					 close="hostComponent.onHelpPopupClosed();">
+		
+		<components:CompHelpScreen
+			width="100%"
+			height="{ UtilsVideoMonitorDPI.helpPageHeight }"
+			model="{ hostComponent.model }"/>
+		
+	</s:CalloutButton>
+	
+	<s:HGroup
+		id="mainButtonContainer"
+		horizontalAlign="right"
+		width="100%">
+		
+		<s:VGroup
+			id="mainButtons"
+			paddingRight="{ hostComponent.getCameraButtonPadding }"
+			paddingTop="{ hostComponent.getCameraButtonPadding }"
+			
+			hideEffect="Fade"
+			showEffect="Fade"
+			gap="-1">
+			
+			<elements:ButtonMobileToggle 
+				id="helpButton"
+				skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonHelp"/>
+			
+			<elements:ButtonMobileToggle 
+				id="hdButton"
+				skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonHD"/>
+			
+			<s:Button
+				id="getCameraButton"
+				skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonGetCams"/>
+			
+			<!--
+			<elements:ButtonAction
+				id="helpButton"
+				buttonPosition="columnMiddle"
+				iconInactive="{ FXGHelpButton }"
+				toggleButton="true"
+				cacheAsBitmap="true"
+				cachePolicy="on"
+				skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction"/>
+			
+			<elements:ButtonAction
+				id="hdButton"
+				buttonPosition="columnMiddle"
+				toggleButton="true"
+				iconInactive="{ FXGHDButton }"
+				cacheAsBitmap="true"
+				cachePolicy="on"
+				skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction"/>
+			
+			<elements:ButtonAction
+				id="getCameraButton"
+				buttonPosition="base"
+				iconInactive="{ FXGGetCamera }"
+				cacheAsBitmap="true"
+				cachePolicy="on"
+				skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction"/>
+			-->
+			
+		</s:VGroup>
+		
+	</s:HGroup>
+	
+	<components:CompVideoPresenter
+		id="topScreenVideoPresenter"
+		width="100%"
+		height="100%"
+		
+		y="{ height / 2 - topScreenVideoPresenter.height / 2 }"/>
+	
+	<s:HGroup
+		id="buttonsOverlay"
+		horizontalAlign="right"
+		visible="{ hostComponent.overlayButtonsVisible }"
+		width="100%">
+		
+		<s:VGroup
+			paddingRight="{ hostComponent.getCameraButtonPadding }"
+			paddingTop="{ hostComponent.getCameraButtonPadding }"
+			
+			hideEffect="Fade"
+			showEffect="Fade"
+			gap="0">
+			
+			<s:Group
+				id="helpButtonOverlay"
+				width="{ helpButton.width }"
+				height="{ helpButton.height }"/>
+			
+			<s:Group
+				id="hdButtonOverlay"
+				width="{ hdButton.width }"
+				height="{ hdButton.height }"/>
+			
+			<s:Group
+				id="getCameraButtonOverlay"
+				width="{ getCameraButton.width }"
+				height="{ getCameraButton.height }"/>
+			
+			
+		</s:VGroup>
+		
+	</s:HGroup>	
+	
+	<s:Group
+		id="languagesOverlay"
+		width="{ languagesCallout.width }"
+		height="{ languagesCallout.height }"
+		
+		x="{ languagesCallout.x }"
+		y="{ languagesCallout.y }"
+		
+		click="hostComponent.onLanguageCallOut(event)" />
+		
+		
+		
+</s:Skin>

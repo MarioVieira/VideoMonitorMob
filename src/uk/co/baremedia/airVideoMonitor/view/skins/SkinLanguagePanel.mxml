@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" xmlns:elements="uk.co.baremedia.airVideoMonitor.view.elements.*">
+	<!-- host component -->
+	<fx:Metadata>
+		[HostComponent("uk.co.baremedia.airVideoMonitor.view.components.CompLanguagePanel")]
+	</fx:Metadata>
+	
+	<fx:Declarations>
+		
+	</fx:Declarations>
+	
+	<fx:Script>
+		<![CDATA[
+			import uk.co.baremedia.airVideoMonitor.assets.Assets;
+			import uk.co.baremedia.airVideoMonitor.enums.EnumsLanguage;
+			import uk.co.baremedia.airVideoMonitor.utils.UtilsDimensions;
+			import uk.co.baremedia.airVideoMonitor.utils.UtilsLanguage;
+			import uk.co.baremedia.airVideoMonitor.utils.UtilsVideoMonitorDPI;
+			import uk.co.baremedia.gnomo.utils.UtilsResources;
+		]]>
+	</fx:Script>
+	
+	<s:VGroup
+		id="buttons"
+		width="{ UtilsVideoMonitorDPI.languageContainer(true) }"
+		height="{ UtilsVideoMonitorDPI.languageContainer(false) }"
+		verticalAlign="middle"
+		horizontalAlign="center">
+		
+		<s:SpinnerListContainer
+			width="100%"
+			height="100%">
+			
+			<s:SpinnerList
+				id="languageOptions"
+				width="100%"
+				height="100%"
+				dataProvider="{ UtilsLanguage.languages }"
+				labelField="label"
+				creationComplete="{ hostComponent.onCheckIsSelected(event) }"
+				change="hostComponent.onLanguageChange(event)">
+				
+			</s:SpinnerList>
+			
+		</s:SpinnerListContainer>
+		
+	</s:VGroup>
+	
+</s:Skin>

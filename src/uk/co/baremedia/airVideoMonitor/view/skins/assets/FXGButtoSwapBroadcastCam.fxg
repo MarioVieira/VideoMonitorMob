@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Graphic version="2.0" viewHeight="25.5" viewWidth="32.083" ai:appVersion="15.0.0.399" ATE:version="1.0.0" flm:version="1.0.0" d:id="1" d:using="" xmlns="http://ns.adobe.com/fxg/2008" xmlns:ATE="http://ns.adobe.com/ate/2009" xmlns:ai="http://ns.adobe.com/ai/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:flm="http://ns.adobe.com/flame/2008">
+  <Library/>
+  <Group ai:artboardActive="1" ai:artboardIndex="0" ai:seqID="1" d:layerType="page" d:pageHeight="25.5" d:pageWidth="32.083" d:type="layer" d:userLabel="Artboard 1">
+    <Group ai:objID="2e5d7070" ai:seqID="2" d:id="2" d:type="layer" d:userLabel="Layer 2">
+      <Group x="-0.97168" y="-2.80664" ai:objID="2f07a3c0" ai:seqID="3">
+        <Group ai:objID="2f07a950" ai:seqID="4">
+          <mask>
+            <Group ai:objID="2e592c20" d:id="3">
+              <Path winding="nonZero" ai:objID="2e5f94b0" ai:seqID="5" data="M0 0 0 26.7773 33.166 26.7773 33.166 0 0 0ZM29.4297 24.7822 2.62305 8.79395 5.49902 3.99609 32.3047 19.9824 29.4297 24.7822Z">
+                <fill>
+                  <SolidColor color="#FFFFFF"/>
+                </fill>
+              </Path>
+            </Group>
+          </mask>
+          <Group x="3.91016" y="6.6123" ai:objID="2e5df010" ai:seqID="6">
+            <Group alpha="0.8" ai:objID="2f020580" ai:seqID="7" flm:isolated="false" flm:knockout="false">
+              <Group ai:objID="29a7cc20" ai:seqID="8" flm:knockout="false">
+                <Path winding="nonZero" ai:objID="2f0441a0" ai:seqID="9" data="M22.9561 0 2.47754 0C1.11426 0 0 1.11523 0 2.47656L0 16.9062C0 18.2676 1.11426 19.3828 2.47754 19.3828L22.9561 19.3828C24.3193 19.3828 25.4346 18.2676 25.4346 16.9062L25.4346 2.47656C25.4346 1.11523 24.3193 0 22.9561 0ZM1.97266 2.79492C1.97266
+ 2.3418 2.33887 1.97559 2.79102 1.97559L22.6406 1.97559C23.0938 1.97559 23.46 2.3418 23.46 2.79492L23.46 13.0166C23.46 13.4688 23.0938 13.8359 22.6406 13.8359L2.79102 13.8359C2.33887 13.8359 1.97266 13.4688 1.97266 13.0166L1.97266 2.79492ZM18.916
+ 17.6934C18.3027 17.6934 17.8066 17.1963 17.8066 16.582 17.8066 15.9697 18.3027 15.4736 18.916 15.4736 19.5293 15.4736 20.0254 15.9697 20.0254 16.582 20.0254 17.1963 19.5293 17.6934 18.916 17.6934ZM22.5518 17.6934C21.9365 17.6934 21.4414 17.1963
+ 21.4414 16.582 21.4414 15.9697 21.9365 15.4736 22.5518 15.4736 23.165 15.4736 23.6621 15.9697 23.6621 16.582 23.6621 17.1963 23.165 17.6934 22.5518 17.6934Z">
+                  <fill>
+                    <SolidColor/>
+                  </fill>
+                </Path>
+              </Group>
+            </Group>
+          </Group>
+        </Group>
+        <Group x="2.00684" y="4.11816" alpha="0.8" ai:objID="29aa1c70" ai:seqID="10" flm:isolated="false">
+          <Path x="-0.000141144" winding="nonZero" ai:objID="29aad3b0" ai:seqID="11" data="M31.298 20.8623C31.2042 20.8623 31.1105 20.8369 31.0275 20.7822L0.229145 0.92041C-0.00278854 0.770508 -0.0696831 0.460938 0.079731 0.229004 0.229145 -0.00341797 0.538715 -0.0693359 0.771137 0.0795898L31.5685 19.9424C31.8009 20.0918 31.8683 20.4014
+ 31.7179 20.6338 31.6222 20.7812 31.4621 20.8623 31.298 20.8623Z">
+            <fill>
+              <SolidColor/>
+            </fill>
+          </Path>
+        </Group>
+      </Group>
+    </Group>
+  </Group>
+  <Private>
+      <ai:PrivateElement d:ref="#1">
+        <ai:SaveOptions>
+          <ai:Dict data="I preserveFilterPolicy 3 I preserveGradientPolicy 4 I preserveTextPolicy 4 B includeObjectOutsideArtboard 0 I expandBlendsOption 5 B writeImages 1 B includeXMP 0 I versionKey 2 B aiEditCap 1 B includeSymbol 0 I rasterizeResolution 72 B downsampleLinkedImages 0 "/>
+        </ai:SaveOptions>
+        <ai:DocData base="FXGButtoSwapBroadcastCam.assets/images" globalOffsetH="6.417" globalOffsetV="-627.25" rulerCanvasDiffH="24.5" rulerCanvasDiffV="640.5">
+          <ai:DocRasterSettings>
+            <ai:Dict data="I dpi. 150 B alis 0 I colr 4 B spot 0 R padd 36 B mask 0 "/>
+          </ai:DocRasterSettings>
+        </ai:DocData>
+        <ai:AutoGenImageList>
+          <ai:Dict/>
+        </ai:AutoGenImageList>
+      </ai:PrivateElement>
+      <ai:PrivateElement flm:hashcode="473404646B6F55C136C598A67B74D4BC" d:ref="#2">
+        <ai:LayerOptions color="5 257 79.31 79.31"/>
+      </ai:PrivateElement>
+      <ai:PrivateElement alternate="1" flm:hashcode="8FABE12E0D613259CED482CD100CAF12" d:ref="#3">
+        <ai:PluginGroupArt major="1" minor="0" name="Pathfinder Suite">
+          <ai:CompoundShape>
+            <ai:Group>
+              <ai:Path data="M 0 0L 0 26.777L 33.166 26.777L 33.166 0L 0 0ZM 29.43 24.782L 2.623 8.794L 5.499 3.996L 32.305 19.982L 29.43 24.782Z" knockout="0" shapeMode="2"/>
+            </ai:Group>
+          </ai:CompoundShape>
+        </ai:PluginGroupArt>
+      </ai:PrivateElement>
+    </Private>
+  </Graphic>

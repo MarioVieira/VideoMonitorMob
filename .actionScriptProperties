@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<actionScriptProperties analytics="false" mainApplicationPath="VideoMonitorMob.as" projectUUID="8bfeab47-b171-425c-b80b-b985e738a9d8" version="10">
+  <compiler additionalCompilerArguments="-locale en_US&#10;-define CONFIG::AD_TESTS true&#10;-define CONFIG::AMAZON false&#10;-define CONFIG::DESKTOP false&#10;-define CONFIG::HAS_ADS false&#10;-define CONFIG::SIGNED_RELEASE true" autoRSLOrdering="true" copyDependentFiles="false" fteInMXComponents="false" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="false" htmlHistoryManagement="false" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin" removeUnusedRSL="true" sourceFolderPath="src" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="true" useDebugRSLSwfs="true" verifyDigests="true" warn="true">
+    <compilerSourcePath/>
+    <libraryPath defaultLinkType="0">
+      <libraryPathEntry kind="4" path="">
+        <excludedEntries>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/advancedgrids.swc" useDefaultLinkType="false"/>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/qtp.swc" useDefaultLinkType="false"/>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/automation_air.swc" useDefaultLinkType="false"/>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/air/airspark.swc" useDefaultLinkType="false"/>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/netmon.swc" useDefaultLinkType="false"/>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/mx/mx.swc" useDefaultLinkType="false"/>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/air/applicationupdater.swc" useDefaultLinkType="false"/>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/utilities.swc" useDefaultLinkType="false"/>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/flex.swc" useDefaultLinkType="false"/>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/sparkskins.swc" useDefaultLinkType="false"/>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/qtp_air.swc" useDefaultLinkType="false"/>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/datavisualization.swc" useDefaultLinkType="false"/>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/spark_dmv.swc" useDefaultLinkType="false"/>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/automation.swc" useDefaultLinkType="false"/>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/automation_dmv.swc" useDefaultLinkType="false"/>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/air/airframework.swc" useDefaultLinkType="false"/>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/air/applicationupdater_ui.swc" useDefaultLinkType="false"/>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/automation_flashflexkit.swc" useDefaultLinkType="false"/>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/automation_agent.swc" useDefaultLinkType="false"/>
+        </excludedEntries>
+      </libraryPathEntry>
+      <libraryPathEntry kind="3" linkType="1" path="/gnomo-lib/bin/gnomo-lib.swc" useDefaultLinkType="false"/>
+      <libraryPathEntry kind="1" linkType="1" path="libs"/>
+    </libraryPath>
+    <sourceAttachmentPath/>
+  </compiler>
+  <applications>
+    <application path="VideoMonitorMob.as"/>
+  </applications>
+  <modules/>
+  <buildCSSFiles/>
+  <flashCatalyst validateFlashCatalystCompatibility="false"/>
+</actionScriptProperties>

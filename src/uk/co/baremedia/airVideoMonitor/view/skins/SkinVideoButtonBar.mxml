@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" 
+		xmlns:elements="uk.co.baremedia.airVideoMonitor.view.elements.*" 
+		xmlns:view="view.*" 
+		xmlns:mx="library://ns.adobe.com/flex/mx" 
+		xmlns:skins="uk.co.baremedia.airVideoMonitor.view.skins.*" xmlns:assets="uk.co.baremedia.airVideoMonitor.view.skins.assets.*">
+	
+	<!-- host component -->
+	<fx:Metadata>
+		[HostComponent("uk.co.baremedia.airVideoMonitor.view.components.CompVideoButtonBar")]
+	</fx:Metadata>
+	
+	<fx:Script>
+		<![CDATA[
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGButtonMute;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGButtonRemoveVideo;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGButtonUnMute;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGCamIn;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGIconFullScreenBack;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGIconFullScreenGo;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGMuteMic;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGSwapBroadcastCam;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGSwapCam;
+			import uk.co.baremedia.airVideoMonitor.view.skins.assets.FXGUnMuteMic;
+		]]>
+	</fx:Script>
+	<!-- SkinParts
+	name=muteButton, type=uk.co.baremedia.airVideoMonitor.view.elements.ButtonAction, required=true
+	name=fullScreenButton, type=uk.co.baremedia.airVideoMonitor.view.elements.ButtonAction, required=true
+	name=sendVideoButton, type=uk.co.baremedia.airVideoMonitor.view.elements.ButtonAction, required=true
+	-->
+	
+	<s:states>
+		<s:State name="noBroadcast"/>
+		<s:State name="onlyOneCam"/>
+		<s:State name="backAndFrontCam"/>
+	</s:states>
+	
+	<s:HGroup
+		id="buttonHolder"
+		scaleX="{ hostComponent.videoButtonBarScale }"
+		scaleY="{ hostComponent.videoButtonBarScale }">
+		
+		<elements:ButtonAction
+			id="sendVideoButton"
+			buttonPosition="left"
+			toggleButton="true"
+			iconInactive="{ FXGCamIn }"
+			skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction" />
+		
+		<elements:ButtonAction
+			id="changeCameraButton"
+			buttonPosition="middle"
+			iconInactive="{ FXGSwapCam }"
+			includeIn="backAndFrontCam"
+			skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction"/>
+		
+		<elements:ButtonAction
+			id="muteMicButton"
+			buttonPosition="middle"
+			iconInactive="{ FXGMuteMic }"
+			iconActivate="{ FXGUnMuteMic }"
+			excludeFrom="noBroadcast"
+			skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction"/>
+		
+		<elements:ButtonAction
+			id="muteButton"
+			buttonPosition="middle"
+			iconInactive="{ FXGButtonMute }"
+			iconActivate="{ FXGButtonUnMute }"
+			skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction"/>
+		
+		<elements:ButtonAction
+			id="removeVideoButton"
+			buttonPosition="middle"
+			iconInactive="{ FXGButtonRemoveVideo }"
+		
+			skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction"/>
+		
+		<elements:ButtonAction
+			id="changeBroadcastCam"
+			buttonPosition="middle"
+			iconInactive="{ FXGSwapBroadcastCam }"
+			visible="false"
+			includeInLayout="false"
+			
+			skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction"/>
+		
+		<elements:ButtonAction
+			id="fullScreenButton"
+			buttonPosition="right"
+			iconInactive="{ FXGIconFullScreenGo }"
+			iconActivate="{ FXGIconFullScreenBack }"
+			skinClass="uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction"/>
+		
+	</s:HGroup>
+	
+	<s:VGroup
+		height="100%"
+		verticalAlign="bottom"
+		paddingBottom="2"
+		paddingLeft="2">  
+		
+		<s:Group
+			id="broadcaster">
+			
+			<assets:FXGCamOn
+				id="cameraOn"
+				width="{ broadcaster.width / 2 }"
+				height="{ broadcaster.height / 2}"
+				y="{ broadcaster.height - cameraOn.height - 2 }"
+				x="2"
+				visible="{ hostComponent.broadcasting }"/>
+			
+			
+			<mx:UIComponent
+				id="broadcasterVideoHolder"
+				visible="{ hostComponent.hasVideoCamera }"/>
+		</s:Group>
+		
+	</s:VGroup>
+	
+</s:Skin>

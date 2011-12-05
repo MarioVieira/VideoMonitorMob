@@ -1,0 +1,206 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace components "uk.co.baremedia.airVideoMonitor.view.components.*";
+@namespace elements "uk.co.baremedia.airVideoMonitor.view.elements.*";
+
+components|CompScreenBase{
+	skinClass:ClassReference("uk.co.baremedia.airVideoMonitor.view.skins.SkinScreenBase");
+}
+
+components|CompVideoPresenter{
+	skinClass:ClassReference("uk.co.baremedia.airVideoMonitor.view.skins.SkinVideoPresenter");
+}
+
+components|CompLanguagePanel{
+	skinClass:ClassReference("uk.co.baremedia.airVideoMonitor.view.components.CompLanguagePanel");
+}
+
+elements|ButtonClose{
+	skinClass:ClassReference("uk.co.baremedia.airVideoMonitor.view.skins.SkinCloseButton");
+}
+
+/*s|RadioButton{
+	skinClass:ClassReference("uk.co.baremedia.airVideoMonitor.view.skins.SkinRadioButton");
+}*/
+
+components|CompUpdater{
+skinClass:ClassReference("uk.co.baremedia.airVideoMonitor.view.skins.SkinUpdater");
+}
+
+components|CompHelpItem{
+skinClass:ClassReference("uk.co.baremedia.airVideoMonitor.view.skins.SkinHelpItem");
+}
+
+components|CompHelpScreenInteraction{
+	skinClass:ClassReference("uk.co.baremedia.airVideoMonitor.view.skins.SkinHelpPageInteraction");
+}
+
+components|CompHelpScreenDescriptor{
+	skinClass:ClassReference("uk.co.baremedia.airVideoMonitor.view.skins.SkinHelpScreenDescriptor");
+}
+
+components|CompHelpScreen{
+	skinClass:ClassReference("uk.co.baremedia.airVideoMonitor.view.skins.SkinHelpScreen");
+}
+
+components|CompNotifier{
+	skinClass:ClassReference("uk.co.baremedia.airVideoMonitor.view.skins.SkinNotifier");
+}
+
+components|CompVideoButtonBar{
+	skinClass:ClassReference("uk.co.baremedia.airVideoMonitor.view.skins.SkinVideoButtonBar");
+}
+
+elements|ButtonAction{
+	skinClass:ClassReference("uk.co.baremedia.airVideoMonitor.view.skins.SkinButtonAction");
+}
+
+s|ActionBar
+{
+	chromeColor: #4E4E50;
+}
+
+components|CompVideoHolder
+{
+	skinClass: ClassReference("uk.co.baremedia.airVideoMonitor.view.skins.SkinVideoHolder");
+}
+
+components|CompVideoBroadcaster
+{
+	skinClass: ClassReference("uk.co.baremedia.airVideoMonitor.view.skins.SkinsVideoBroadcaster");
+}
+
+@media (os-platform: "QNX")
+{
+	s|ActionBar
+	{
+		/*chromeColor: #4E4E50;*/
+		chromeColor: #222222;
+	}
+}
+
+s|ActionBar
+{
+	chromeColor: #222222;
+}
+
+@media (os-platform: "IOS")
+{
+	s|ActionBar
+	{
+		chromeColor: #222222;
+	}
+}
+
+@media (os-platform: "Android")
+{
+	/* Android Gingerbread style Panel skin*/
+	/* not picked up from mobile_examples.swc because the spark theme has higher priority */
+	/* s|Button
+	{
+	skinClass: ClassReference("uk.co.baremedia.airVideoSpy.skins.SkinAndroidButton");
+	borderWeight: 6;
+	borderColor: #666666;
+	backgroundColor: #FFFFFF;
+	fontWeight: normal;
+	} */
+	
+	s|ActionBar
+	{
+		chromeColor: #222222;
+	}
+	
+	s|Panel
+	{
+		skinClass: ClassReference("spark.skins.spark.PanelSkin");
+		borderWeight: 6;
+		borderColor: #666666;
+		backgroundColor: #FFFFFF;
+		fontWeight: normal;
+	}
+	
+	s|Panel s|Button
+	{
+		fontWeight: normal;
+	}
+	
+	s|Panel #titleDisplay
+	{
+		color: #FFFFFF;
+		fontSize: 28;
+	}
+}
+
+@media (os-platform: "Android") and (application-dpi: 160)
+{
+	s|Panel
+	{
+		borderWeight: 4;
+	}
+	
+	s|Panel #titleDisplay
+	{
+		fontSize: 18;
+	}
+}
+
+@media (os-platform: "Android") and (application-dpi: 320)
+{
+	s|Panel
+	{
+		borderWeight: 8;
+	}
+	
+	s|Panel #titleDisplay
+	{
+		fontSize: 36;
+	}
+}
+
+@media (os-platform: "IOS")
+{
+	.listFormItemRenderer
+	{
+		borderStyle: rounded;
+		cornerRadius: 10;
+	}
+	
+	.listForm #titleDisplay
+	{
+		backgroundAlpha: 0;
+		color: #000000;
+		fontSize: 18;
+	}
+}
+
+@media (os-platform: "IOS") and (application-dpi: 320)
+{
+	.listFormItemRenderer
+	{
+		cornerRadius: 20;
+	}
+	
+	.listForm #titleDisplay
+	{
+		fontSize: 36;
+	}
+}
+
+@media (os-platform: "IOS")
+{
+	.styleItemRenderList
+	{
+		borderStyle: rounded;
+		cornerRadius: 10;
+		paddingTop: 5;
+	}
+}
+
+@media (os-platform: "IOS") and (application-dpi: 320)
+{
+	.styleItemRenderList
+	{
+		cornerRadius: 20;
+		paddingTop: 10;
+	}
+}

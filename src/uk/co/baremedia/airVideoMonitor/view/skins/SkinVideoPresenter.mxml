@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" 
+		xmlns:assets="uk.co.baremedia.airVideoMonitor.view.skins.assets.*">
+	
+	<!-- host component -->
+	<fx:Metadata>
+		[HostComponent("uk.co.baremedia.airVideoMonitor.view.components.CompVideoPresenter")]
+	</fx:Metadata>
+	
+	<!-- SkinParts
+	name=videoPresenter, type=spark.components.HGroup, required=true
+	-->
+	
+	<s:Scroller
+		id="scroller"
+		width="100%"
+		maxHeight="{ hostComponent.height }"
+		y="{ height / 2 - scroller.height / 2 }"
+		horizontalScrollPolicy="on">
+		
+		<s:VGroup
+			horizontalAlign="left"
+			verticalAlign="middle"
+			gap="0"
+			height="100%">
+			
+			<s:Spacer
+				width="50"/>
+			
+			<assets:FXGFilmReelTop
+				visible="{ hostComponent.filmReelVisible }"
+				includeInLayout="{ hostComponent.filmReelVisible }"/>
+			
+			<s:HGroup
+				gap="-10"
+				horizontalAlign="left"
+				id="presenter"/>
+			
+			<assets:FXGFilmReelBase
+				visible="{ hostComponent.filmReelVisible }"
+				includeInLayout="{ hostComponent.filmReelVisible }"/>
+			
+		</s:VGroup>
+		
+	</s:Scroller>
+	
+</s:Skin>

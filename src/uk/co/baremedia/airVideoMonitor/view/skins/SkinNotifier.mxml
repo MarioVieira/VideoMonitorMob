@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" 
+		xmlns:skins="uk.co.baremedia.airVideoMonitor.view.skins.*" 
+		xmlns:assets="uk.co.baremedia.airVideoMonitor.view.skins.assets.*"
+		
+		creationComplete="patchAIRDisplayListIssue()">
+	
+	<!-- host component -->
+	<fx:Metadata>
+		[HostComponent("uk.co.baremedia.airVideoMonitor.view.components.CompNotifier")]
+	</fx:Metadata>
+	
+	<fx:Script>
+		<![CDATA[
+			import flash.utils.setTimeout;
+			
+			import org.as3.mvcsInjector.utils.Tracer;
+			
+			import uk.co.baremedia.airVideoMonitor.assets.Assets;
+			import uk.co.baremedia.airVideoMonitor.enums.EnumsLanguage;
+			import uk.co.baremedia.gnomo.utils.UtilsResources;
+			
+			public function patchAIRDisplayListIssue():void
+			{
+				forceUpdateMiddleBarOriginalSize();
+				setTimeout(forceUpdateMiddleBarOriginalSize, 500);
+				setTimeout(forceUpdateMiddleBarOriginalSize, 1000);
+			}
+			
+			protected function setDefautWidth():void
+			{
+				middleBarImage.width = 43
+			}
+			
+			private function forceUpdateMiddleBarOriginalSize():void
+			{
+				//Tracer.log(this, "forceUpdateMiddleBarOriginalSize()");
+				for(var i:int; i <= 10; i++)
+				{
+					setDefautWidth();
+				}
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<!--[SkinPart(required="true")]
+	public var middleBarHolder	:HGroup;
+	
+	[SkinPart(required="true")]
+	public var leftBar			:Image;
+	
+	[SkinPart(required="true")]
+	public var middleBar		:Image;
+	
+	[SkinPart(required="true")]
+	public var rightBar			:Image;
+	
+	[SkinPart(required="true")]
+	public var notificationText	:TextArea;
+	
+	[SkinPart(required="true")]
+	public var arrowOpen		:IVisualElement;-->
+	
+	<s:HGroup
+		id="mainGroup"
+		gap="0">
+		
+		<s:Image
+			id="leftBar">
+			
+			<s:source>
+				<s:MultiDPIBitmapSource
+					source160dpi="{ Assets.notiferLeftBar_160 }"
+					source240dpi="{ Assets.notiferLeftBar_240 }"
+					source320dpi="{ Assets.notiferLeftBar_320 }"/>
+				
+			</s:source>
+			
+		</s:Image>
+		
+		<s:HGroup
+			id="middleBarHolder">
+			<s:Group>
+				
+				<!--s:HGroup
+				id="middleBar"
+				height="{ leftBar.height }"
+				width="43">-->
+				
+				<assets:FXGNotifierBar
+					id="middleBarImage"  />
+				
+				<!--</s:HGroup>-->
+				
+				<s:Group
+					id="arrowOpen"
+					hideEffect="Fade"
+					showEffect="Fade">
+					
+					<assets:FXGArrowButton
+						y="15"/>
+					
+				</s:Group>
+				
+				<s:Label
+					id="notificationText"
+					color="0x333333"
+					mouseEnabled="false"
+					textAlign="center"
+					text="{ resourceManager.getString(UtilsResources.bundleName, EnumsLanguage.NOTIFIER_START_TEXT) }"
+					y="15"/>
+				
+			</s:Group>
+		</s:HGroup>
+		
+		<s:Image
+			id="rightBar">
+			
+			<s:source>
+				
+				<s:MultiDPIBitmapSource
+					source160dpi="{ Assets.notiferRightBar_160 }"
+					source240dpi="{ Assets.notiferRightBar_240 }"
+					source320dpi="{ Assets.notiferRightBar_320 }"/>
+				
+			</s:source>
+			
+		</s:Image>
+		
+	</s:HGroup>
+	
+</s:Skin>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" 
+		xmlns:mx="library://ns.adobe.com/flex/mx" 
+		xmlns:skins="uk.co.baremedia.airVideoMonitor.view.skins.*" 
+		xmlns:elements="uk.co.baremedia.airVideoMonitor.view.elements.*" 
+		xmlns:components="uk.co.baremedia.airVideoMonitor.view.components.*" 
+		xmlns:assets="uk.co.baremedia.airVideoMonitor.view.skins.assets.*">
+	
+	<!-- host component -->
+	<fx:Metadata>
+		[HostComponent("uk.co.baremedia.airVideoMonitor.view.components.CompVideoHolder")]
+	</fx:Metadata>
+	
+	<!-- SkinParts
+		name=videoHolder, type=mx.core.UIComponent, required=true
+	-->
+	
+	<s:Group>
+		<s:layout>
+			<s:HorizontalLayout
+				gap="-3"/>
+		</s:layout>
+		<assets:FXGFilmReelDivider
+			height="{ videoHolder.height }"/>
+		
+		<elements:ElementVideoHolder id="videoHolder"/>
+		
+		<assets:FXGFilmReelDivider
+			height="{ videoHolder.height }"/>
+	</s:Group>
+	
+	<components:CompVideoButtonBar
+		id="videoButtonBar"
+		x="10"
+		y="5"
+		height="100%"/>
+
+</s:Skin>

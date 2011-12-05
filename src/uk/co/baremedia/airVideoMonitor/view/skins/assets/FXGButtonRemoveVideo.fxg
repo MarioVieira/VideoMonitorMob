@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Graphic version="2.0" viewHeight="25.5" viewWidth="32.083" ai:appVersion="15.0.0.399" ATE:version="1.0.0" flm:version="1.0.0" d:id="1" d:using="" xmlns="http://ns.adobe.com/fxg/2008" xmlns:ATE="http://ns.adobe.com/ate/2009" xmlns:ai="http://ns.adobe.com/ai/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:flm="http://ns.adobe.com/flame/2008">
+  <Library/>
+  <Group ai:artboardActive="1" ai:artboardIndex="0" ai:seqID="1" d:layerType="page" d:pageHeight="25.5" d:pageWidth="32.083" d:type="layer" d:userLabel="Artboard 1">
+    <Group ai:objID="31eadc60" ai:seqID="2" d:id="2" d:type="layer" d:userLabel="Layer 2">
+      <Line alpha="0.8" xFrom="1.1665" yFrom="2.3335" xTo="32.333" yTo="21.334" ai:objID="31a12260" ai:seqID="3">
+        <stroke>
+          <SolidColorStroke weight="1" joints="miter" miterLimit="10"/>
+        </stroke>
+      </Line>
+      <Path x="8.92432" y="3.80566" alpha="0.8" winding="nonZero" ai:objID="3ac696c0" ai:seqID="4" data="M0 0 16.981 0C16.981 0 19.4595 0.165039 19.4595 2.47656 19.4595 4.78809 19.4595 11.5225 19.4595 11.5225L17.4849 10.335 17.4849 2.79492C17.4849 2.79492 17.4106 1.97559 16.6646 1.97559 15.9185 1.97559 3.49707 1.97559 3.49707 1.97559L0 0Z">
+        <fill>
+          <SolidColor/>
+        </fill>
+      </Path>
+      <Path x="2.94868" y="6.75488" alpha="0.8" winding="nonZero" ai:objID="3ac68510" ai:seqID="5" data="M1.97271 1.17676C1.97271 1.17676 1.97271 9.37012 1.97271 10.0674 1.97271 10.7646 2.79107 10.8867 2.79107 10.8867L18.2535 10.8867C18.2535 10.8867 24.0621 14.4424 25.1148 15.1611 24.4058 16.3857 23.1148 16.4258 23.1148 16.4258 23.1148 16.4258 4.70708
+ 16.4336 2.33208 16.4336 -0.0429163 16.4336 5.24521e-05 13.957 5.24521e-05 13.957L5.24521e-05 0 1.97271 1.17676ZM21.691 13.0029C21.691 13.0029 21.439 13.2295 21.441 13.6328 21.4429 13.875 21.5855 14.665 22.5523 14.7441 23.0503 14.7764 23.4664
+ 14.3643 23.5367 14.1514 23.3335 14.0264 21.691 13.0029 21.691 13.0029ZM18.9253 12.5547C18.3199 12.5547 17.8316 13.0439 17.8316 13.6484 17.8316 14.2529 18.3199 14.7422 18.9253 14.7422 19.5289 14.7422 20.0191 14.2529 20.0191 13.6484 20.0191 13.0439
+ 19.5289 12.5547 18.9253 12.5547Z">
+        <fill>
+          <SolidColor/>
+        </fill>
+      </Path>
+    </Group>
+  </Group>
+  <Private>
+      <ai:PrivateElement d:ref="#1">
+        <ai:SaveOptions>
+          <ai:Dict data="I expandBlendsOption 5 B downsampleLinkedImages 0 B aiEditCap 1 B includeSymbol 0 B includeXMP 0 I preserveTextPolicy 4 I preserveFilterPolicy 3 I preserveGradientPolicy 4 I versionKey 2 B writeImages 1 B includeObjectOutsideArtboard 0 I rasterizeResolution 72 "/>
+        </ai:SaveOptions>
+        <ai:DocData base="FXGButtonRemoveVideo.assets/images" globalOffsetH="6.417" globalOffsetV="-627.25" rulerCanvasDiffH="24.5" rulerCanvasDiffV="640.5">
+          <ai:DocRasterSettings>
+            <ai:Dict data="I colr 4 I dpi. 150 B alis 0 B spot 0 B mask 0 R padd 36 "/>
+          </ai:DocRasterSettings>
+        </ai:DocData>
+        <ai:AutoGenImageList>
+          <ai:Dict/>
+        </ai:AutoGenImageList>
+      </ai:PrivateElement>
+      <ai:PrivateElement flm:hashcode="C3919D7C8B46510CEE38B8DF240B26A0" d:ref="#2">
+        <ai:LayerOptions color="5 257 79.31 79.31"/>
+      </ai:PrivateElement>
+    </Private>
+  </Graphic>

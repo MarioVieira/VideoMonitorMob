@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Graphic version="2.0" viewHeight="120" viewWidth="160" ai:appVersion="15.0.0.399" ATE:version="1.0.0" flm:version="1.0.0" d:id="1" d:using="" xmlns="http://ns.adobe.com/fxg/2008" xmlns:ATE="http://ns.adobe.com/ate/2009" xmlns:ai="http://ns.adobe.com/ai/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:flm="http://ns.adobe.com/flame/2008">
+  <Library/>
+  <Group ai:artboardActive="1" ai:artboardIndex="0" ai:seqID="1" d:layerType="page" d:pageHeight="120" d:pageWidth="160" d:type="layer" d:userLabel="Artboard 1">
+    <Group ai:objID="30e57c20" ai:seqID="2" d:id="2" d:type="layer" d:userLabel="Layer 2">
+      <Group x="-0.999512" y="-1" ai:objID="30d2dfd0" ai:seqID="3">
+        <Rect x="1" y="1" width="160" height="120" radiusX="9.9993" radiusY="9.9993" ai:objID="30c89420" ai:seqID="4">
+          <fill>
+            <SolidColor color="#FFFFFF" alpha="0.8"/>
+          </fill>
+          <stroke>
+            <SolidColorStroke weight="2" caps="none" joints="miter" miterLimit="10" alpha="0.8"/>
+          </stroke>
+        </Rect>
+        <Group x="29.3945" y="37.5801" alpha="0.8" ai:objID="30d22640" ai:seqID="5" flm:isolated="false">
+          <Path x="70.835" y="10.8154" winding="nonZero" ai:objID="30d95ac0" ai:seqID="6" data="M15.7803 25.2021 15.7803 0 0 7.99121 0 18.4453 15.7803 25.2021Z">
+            <fill>
+              <SolidColor/>
+            </fill>
+          </Path>
+          <Rect width="68.582" height="46.8389" radiusX="11.3078" radiusY="11.3078" ai:objID="30c73c80" ai:seqID="7">
+            <fill>
+              <SolidColor/>
+            </fill>
+          </Rect>
+          <Rect x="89.3809" y="3.74609" width="13.8291" height="39.3428" radiusX="6.91198" radiusY="6.91198" ai:objID="30d2e6b0" ai:seqID="8">
+            <fill>
+              <SolidColor/>
+            </fill>
+          </Rect>
+        </Group>
+      </Group>
+    </Group>
+  </Group>
+  <Private>
+      <ai:PrivateElement d:ref="#1">
+        <ai:SaveOptions>
+          <ai:Dict data="B writeImages 1 B aiEditCap 1 I preserveTextPolicy 4 B includeSymbol 0 I versionKey 2 B includeXMP 0 B downsampleLinkedImages 0 B includeObjectOutsideArtboard 0 I expandBlendsOption 5 I preserveFilterPolicy 3 I preserveGradientPolicy 4 I rasterizeResolution 72 "/>
+        </ai:SaveOptions>
+        <ai:DocData base="FXGCamOn.assets/images" globalOffsetH="-57.542" globalOffsetV="-580" rulerCanvasDiffH="24.5" rulerCanvasDiffV="640.5">
+          <ai:DocRasterSettings>
+            <ai:Dict data="I colr 4 I dpi. 150 B alis 0 B spot 0 B mask 0 R padd 36 "/>
+          </ai:DocRasterSettings>
+        </ai:DocData>
+        <ai:AutoGenImageList>
+          <ai:Dict/>
+        </ai:AutoGenImageList>
+      </ai:PrivateElement>
+      <ai:PrivateElement flm:hashcode="26FC9FA1D68EB2B8EB76ABDB76F1FD78" d:ref="#2">
+        <ai:LayerOptions color="5 257 79.31 79.31"/>
+      </ai:PrivateElement>
+    </Private>
+  </Graphic>
